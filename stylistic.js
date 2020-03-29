@@ -57,8 +57,8 @@ module.exports = {
 		'no-unneeded-ternary': 'error',
 		'one-var': ['error', { uninitialized: 'always', initialized: 'never' }],
 		'operator-assignment': 'off',
-        'padding-line-between-statements': 'off', // why ????????
-        //  Next line is for eslint >= 6.7.0 so wait to put it in
+		'padding-line-between-statements': 'off', // why ????????
+		//  Next line is for eslint >= 6.7.0 so wait to put it in
 		// 'prefer-exponentiation-operator	': 'warn',
 		'prefer-object-spread': 'warn',
 		'sort-keys': 'off',
