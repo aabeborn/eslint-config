@@ -1,34 +1,47 @@
 {
-  "name": "@andreabenato/eslint-config",
-  "version": "0.1.0",
-  "description": "ESLint rules written by your friend Andrea",
-  "main": "index.js",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "javascript",
-    "styleguide"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/andreabenato/eslint-config.git"
-  },
-  "bugs": {
-    "url": "https://github.com/andreabenato/eslint-config/issues"
-  },
-  "author": "Andrea Benato <benato.andrea98@gmail.com>",
-  "license": "MIT",
-  "scripts": {},
-  "husky": {
-    "hooks": {}
-  },
-  "engines": {
-    "node": ">=8",
-    "npm": ">=6",
-    "yarn": ">=1"
-  },
-  "devDependencies": {
-    "husky": "^4.2.3"
-  }
+	"name": "@andreabenato/eslint-config",
+	"version": "0.1.0",
+	"description": "ESLint rules written by your friend Andrea",
+	"main": "index.js",
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"config",
+		"javascript",
+		"styleguide"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreabenato/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/andreabenato/eslint-config/issues"
+	},
+	"author": "Andrea Benato <benato.andrea98@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"format": "prettier --write \"**/*.+(js|json|ts|tsx)\"",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"commit-validation": "npm run format && npm run lint"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run commit-validation"
+		}
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-find-rules": "^3.4.0",
+		"husky": "^4.2.3",
+		"prettier": "^2.0.2"
+	},
+	"peerDependencies": {
+		"eslint": ">=6"
+	},
+	"engines": {
+		"node": ">=8",
+		"npm": ">=6",
+		"yarn": ">=1"
+	}
 }
