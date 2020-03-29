@@ -1,0 +1,34 @@
+{
+  "name": "@andreabenato/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint rules written by your friend Andrea",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreabenato/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreabenato/eslint-config/issues"
+  },
+  "author": "Andrea Benato <benato.andrea98@gmail.com>",
+  "license": "MIT",
+  "scripts": {},
+  "husky": {
+    "hooks": {}
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3"
+  }
+}
