@@ -23,11 +23,11 @@
 		"format": "prettier --write \"**/*.+(js|json|ts|tsx)\"",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"commit-validation": "npm run format && npm run lint"
+		"validation": "npm run format && npm run lint"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run commit-validation"
+			"pre-commit": "npm run validation"
 		}
 	},
 	"devDependencies": {
@@ -43,5 +43,10 @@
 		"node": ">=8",
 		"npm": ">=6",
 		"yarn": ">=1"
+	},
+	"dependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-plugin-babel": "^5.3.0"
 	}
 }
