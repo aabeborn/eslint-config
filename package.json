@@ -1,6 +1,6 @@
 {
 	"name": "@andreabenato/eslint-config",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "ESLint rules written by your friend Andrea",
 	"main": "index.js",
 	"keywords": [
@@ -23,16 +23,15 @@
 		"format": "prettier --write \"**/*.+(js|json|ts|tsx)\"",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"validation": "npm run format && npm run lint"
+		"commit-validation": "npm run format && npm run lint"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run validation"
+			"pre-commit": "npm run commit-validation"
 		}
 	},
 	"devDependencies": {
 		"eslint": "^6.8.0",
-		"eslint-config-prettier": "^6.10.1",
 		"eslint-find-rules": "^3.4.0",
 		"husky": "^4.2.3",
 		"prettier": "^2.0.2"
