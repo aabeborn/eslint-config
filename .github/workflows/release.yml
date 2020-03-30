@@ -1,0 +1,27 @@
+name: Package Release
+
+on: 
+    push:
+        branches: 
+            - master
+
+jobs: 
+    release:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+              node-version: [8.x, 10.x, 12.x]
+        steps:
+            - name: checkout
+              uses: actions/checkout@master    
+            - name: setup nodejs ${{ matrix.node-version }}
+              uses:  actions/setup-node@v1      
+              with:
+                node-version: ${{ matrix.node-version }}
+            - name: install dependencies
+              run: npm install
+            - name: release
+              env: 
+                GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+                NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+              run: npx semantic-release
