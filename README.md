@@ -8,6 +8,46 @@ Take a good spritz/beer in your saved time!
 
 ## How to use 
 
+Install it via npm by running:
+
+```
+    npm install ---save dev eslint @andreabenato/eslint-config
+```
+
+And then the only thing you have to do is extending it in your eslint like this
+
+```json
+{
+    "extends":["@andreabenato"]
+}
+```
+
+### Subconfigurations
+
+The main configuration contains only the main rules valid for every kind of project.
+
+So the packages exposes some really useful subconfigurations, extendible from your project when you needed them.
+
+These configurations are: 
+
+- es6 => used for ecmascript modules (uses babel-eslint as parser)
+- commonjs => used for commonjs syntax modules
+- react => used for react and jsx syntax
+- strict => javascript strict mode
+
+You can use them by extending them with the main configuration (better solution)
+```json
+{
+    "extends":["@andreabenato","@andreabenato/<config_name>"]
+}
+```
+
+or standalone if you have your own base configuration: 
+```json
+{
+    "extends":["@andreabenato/<config_name>"]
+}
+```
 
 ## License
 
