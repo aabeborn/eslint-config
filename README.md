@@ -30,7 +30,7 @@ So the packages exposes some really useful subconfigurations, extendible from yo
 
 These configurations are: 
 
-- es6 => used for ecmascript modules (uses babel-eslint as parser)
+- ecma => used for ecmascript (es6) modules e syntax (uses babel-eslint as parser)
 - commonjs => used for commonjs syntax modules
 - react => used for react and jsx syntax
 - strict => javascript strict mode
@@ -48,6 +48,12 @@ or standalone if you have your own base configuration:
     "extends":["@andreabenato/<config_name>"]
 }
 ```
+
+**ATTENTION** 
+It's recommended to install this dependencies/plugin to make the package works correctly.
+
+- `react`: [React](https://www.npmjs.com/package/react) if you are using the ReactJs configuration
+ 
 
 ## License
 
