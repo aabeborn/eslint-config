@@ -55,11 +55,21 @@ The rules included are the ones strictly related to the configuration name!
 
 **ATTENTION** 
 It's recommended to install this dependencies/plugin to make the package works correctly.
+React:
+- `eslint-react`
+- `eslint-react-hooks`
 
-- `react`: [React](https://www.npmjs.com/package/react) if you are using the ReactJs configuration (eslint-config-react)
-- `babel-module-resolver`: [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
-    to work with the module-resolver babel plugin (eslint-plugin-import and eslint-import-resolver-babel-module)
-- `jest`: [jest framework](npmjs.com/package/jest)
+Jest: 
+- `eslint-plugin-jest`
+
+JSX A11y:
+-`eslint-plugin-jsx-a11y`
+
+Babel Module Resolver
+-`eslint-plugin-import`
+-`eslint-import-resolver-babel-module` (if you use aliases in babel)
+
+
 ## License
 
 The project is currently under MIT license
