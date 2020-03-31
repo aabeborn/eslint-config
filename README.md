@@ -52,7 +52,7 @@ or standalone if you have your own base configuration:
 **ATTENTION** 
 It's recommended to install this dependencies/plugin to make the package works correctly.
 
-- `react`: [React](https://www.npmjs.com/package/react) if you are using the ReactJs configuration
+- `react`: [React](https://www.npmjs.com/package/react) if you are using the ReactJs configuration (eslint-config-react)
  
 
 ## License
