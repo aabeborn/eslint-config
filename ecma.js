@@ -7,7 +7,7 @@ module.exports = {
 		ecmaVersion: 2018,
 		sourceType: 'module',
 	},
-	extends: ['prettier'],
+	extends: ['prettier', './import.js'],
 	plugins: ['babel'],
 	rules: {
 		'arrow-body-style': 'off',
