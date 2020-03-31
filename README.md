@@ -59,7 +59,7 @@ It's recommended to install this dependencies/plugin to make the package works c
 - `react`: [React](https://www.npmjs.com/package/react) if you are using the ReactJs configuration (eslint-config-react)
 - `babel-module-resolver`: [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
     to work with the module-resolver babel plugin (eslint-plugin-import and eslint-import-resolver-babel-module)
-
+- `jest`: [jest framework](npmjs.com/package/jest)
 ## License
 
 The project is currently under MIT license
