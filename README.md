@@ -48,6 +48,10 @@ or standalone if you have your own base configuration:
     "extends":["@andreabenato/<config_name>"]
 }
 ```
+**note**
+if you use your base configuration rememeber that all the common rules also for styleing are not imported.
+
+The rules included are the ones strictly related to the configuration name!
 
 **ATTENTION** 
 It's recommended to install this dependencies/plugin to make the package works correctly.
