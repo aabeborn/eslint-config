@@ -63,7 +63,7 @@ Jest:
 - `eslint-plugin-jest`
 
 JSX A11y:
--`eslint-plugin-jsx-a11y`
+- `eslint-plugin-jsx-a11y`
 
 Babel Module Resolver
 -`eslint-plugin-import`
