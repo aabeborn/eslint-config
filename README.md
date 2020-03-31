@@ -69,6 +69,8 @@ Babel Module Resolver
 -`eslint-plugin-import`
 -`eslint-import-resolver-babel-module` (if you use aliases in babel)
 
+Webpack: 
+- `eslint-import-resolver-webpack` (don't know if it is really necessary)
 
 ## License
 
