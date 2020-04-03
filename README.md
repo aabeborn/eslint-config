@@ -48,6 +48,9 @@ or standalone if you have your own base configuration:
     "extends":["@andreabenato/<config_name>"]
 }
 ```
+
+**Typescript** 
+The Typescript version is a standalone. So there is no need of the default configuration or the cma on (it imports them by itself). 
 **note**
 if you use your base configuration rememeber that all the common rules also for styleing are not imported.
 
@@ -71,6 +74,9 @@ Babel Module Resolver
 
 Webpack: 
 - `eslint-import-resolver-webpack` (don't know if it is really necessary)
+
+Typescript: 
+- `@typescript-eslint/eslint-plugin`
 
 ## License
 
